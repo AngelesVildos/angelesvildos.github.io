@@ -1,0 +1,22 @@
+$font-principal: "Montserrat", sans-serif;
+$font-secundaria: "Heading Now Trial", sans-serif;
+$fondo: #080808;
+
+@mixin focus {
+    outline: none;
+    border-color: rgba(235, 235, 235, 0.3); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);;
+}
+
+@mixin zoom-elemento {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@mixin figcaption {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: gray;
+    text-align: center;
+}

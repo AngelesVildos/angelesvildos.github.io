@@ -1,0 +1,14 @@
+/*  page - crecer con memoria */
+
+.video-ccm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    video {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        border-radius: 8px;
+    }
+}

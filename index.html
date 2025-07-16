@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./medios/icon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title> AV - Portfolio audiovisual </title>
+    <meta name="description" content="Sitio web dedicado a Taylor Swift con novedades, eras, logros, historia y discografía completa de una de las artistas más influyentes de la industria musical.">
+    <meta name="keywords" content="taylor swift, sitio taylor swift, novedades taylor wwift, eras taylor swift, historia taylor swift, discografía taylor swift, álbumes taylor swift, swifties">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<body>
+  <!--PANTALLA INICIAL CON EL LOGO-->
+  <div id="splash-screen">
+    <img data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" src="./medios/logo-blanco2.png" alt="Logo Ángeles Vildos" id="splash-logo">
+    <button id="boton-visit">Entrar</button>
+  </div>
+    <header>
+      <!--navbar con Bootstrap-->
+      <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a href="#"> <img src="./medios/logo-blanco2.png" id="logo-header" alt="Logo Taylor Swift"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="menu-hamburguesa"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" id="navbar-desplegable">
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">SOBRE MÍ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">PROYECTOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Video principal de fondo
+    <div id="video-container">
+      <video autoplay loop playsinline id="video-fondo">
+        <source src="./medios/video-mk.mp4" type="video/mp4">
+      </video>
+      <button id="btn-sonido" aria-label="Toggle sound">
+        <img id="icono-sonido" src="./medios/volumen-off.png" alt="Toggle sound" />
+      </button>
+    </div>
+
+    <div class="contenido-superpuesto">
+      <h1></h1>
+    </div> -->
+    
+    <main>
+      <section id="portada">
+        <div class="portada-texto">
+          <h1>PORTFOLIO AUDIOVISUAL</h1>
+          <p>Ángeles Vildos - Licenciada en Diseño de Comunicación Visual</p>
+        </div>
+      </section>
+
+      <!--SOBRE MÍ-->
+      <section id="sobre-mi">
+        <div class="titulos">
+          <h1>SOBRE MÍ</h1>
+        </div>
+        <div>
+
+        </div>
+
+        <div class="contenedor-grid">
+            <p class="texto-grid-1">¡Hola!
+              <br><br>
+              Mi nombre es Ángeles Vildos, tengo 25 años y soy Licenciada en Diseño de Comunicación Visual.
+              <br><br>
+              Siempre fui una apasionada del mundo audiovisual porque me gusta saber que la mezcla de audio y video puede lograr conectar con los sentimientos y sensibilidad de las personas.
+              <br><br>
+              Debido a mi personalidad detallista, el estilo que más disfruto editar es el de <i>sync to beat</i> (técnica de alinear los elementos visuales con el ritmo de la música) pero me gusta editar cualquier tipo de contenido.
+              <br><br>
+              Te invito a conocer mi sitio en donde publico y comparto mis proyectos.
+              <br><br>
+              ¡Gracias por tu tiempo!
+            </p>
+            <div class="contenedor-img-grid1">
+              <img data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" class="card-img-top aos-init aos-animate" src="./medios/foto-mia.jpeg" alt="Foto de Ángeles Vildos">
+            </div>
+            <div class="contenedor-img-grid2">
+              <img data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out" class="card-img-top aos-init aos-animate" src="./medios/graduacion1.jpg" alt="Foto de graduación">
+            </div>
+          </div>
+      </section>
+
+      <!--PROYECTOS-->
+      <section id="proyectos">
+        <div class="titulos">
+          <h1>PROYECTOS</h1>
+        </div>
+
+      <div class="contenedor-proyectos">
+        <div class="div-proyectos">
+          <a href="./page/laopera.html"> <h2>LA OPERA (2025)</h2> </a>
+          <!-- <a href="./page/laopera.html"> <h2>L A&nbsp;&nbsp;O P E R A</h2> </a> -->
+        </div>
+        <div class="div-proyectos">
+          <a href="./page/crecerconmemoria.html"> <h2>CRECER CON MEMORIA (2023)</h2> </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-contenido">
+        <div class="footer-placeholder"></div>
+        <div class="redes-sociales">
+          <div class="iconos-redes">
+            <a href="https://www.linkedin.com/in/%C3%A1ngeles-vildos-99b813200/" target="_blank"> <img src="./medios/linkedin.png" alt="Logo de LinkedIn"> </a>
+            <a href="https://github.com/AngelesVildos" target="_blank"> <img src="./medios/github.png" alt="Logo de GitHub"> </a>
+          </div>
+          <h3> <a class="email-link" href="mailto:angelesvildos@gmail.com">angelesvildos@gmail.com</a> </h3>
+        </div>
+      </div>
+      <h3 class="footer-texto">© 2025 — Designed & Developed by Ángeles Vildos</h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="./js/animaciones.js"></script>
+    <!--AOS-->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

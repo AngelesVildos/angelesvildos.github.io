@@ -1,0 +1,24 @@
+/*  media query - mobile ______________________________________________________________________________________________*/
+
+@media (max-width: 575.98px) {
+
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imagen1"
+            "texto1"
+            "imagen2";
+    }
+}

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import "./partials/variables";
+
+@font-face {
+  font-family: 'Heading Now Trial';
+  src: url('../fonts/HeadingNowTrial-46Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*  body  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $fondo;
+    font-family: $font-principal;
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-optical-sizing: auto;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8rem;
+    font-family: $font-secundaria;
+    font-weight: 800;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.titulos {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    .flecha-link img {
+        width: 25px;
+        height: auto;
+        cursor: pointer;
+        display: block;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.descripcion {
+    padding: 0 60px 70px 60px;
+}
+
+/*  header  */
+
+header {
+    #navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 20px 50px 20px 50px;
+        background-color: transparent !important;
+        font-size: 1.4rem;
+        font-weight: 600;
+        box-shadow: none;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        &.scrolled {
+            background-color: $fondo !important;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+        }
+        #logo-header {
+            width: 100px;
+        }
+        #menu-hamburguesa {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        #navbar-desplegable {
+            display: flex;
+            margin-left: auto;
+            gap: 5px;
+            a {
+                color: white;
+                position: relative;
+                padding-bottom: 5px;
+                text-decoration: none;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 0%;
+                    background-color: white;
+                    transition: width 0.3s ease;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@import "./partials/index";
+@import "./partials/proyectos";
+@import "./partials/sobre-mi";
+@import "./partials/laopera";
+@import "./partials/crecerconmemoria";
+
+/*  footer  */
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: $fondo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer-contenido {
+        width: 100%;
+        padding: 0 60px 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 210px;
+        .footer-placeholder {
+            width: 100px;
+            height: auto;
+            }
+        .redes-sociales {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            .iconos-redes {
+                display: flex;
+                gap: 10px;
+                img {
+                    width: 30px;
+                }
+            }
+            .email-link {
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    color: dodgerblue;
+                }
+            }
+            img {
+                width: 35px;
+                height: auto;
+            }
+        }
+    }
+    .footer-texto {
+        background-color: #0e0e0e;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: auto;
+    }
+}
+
+@import "./partials/mediaquery-mobile";
+@import "./partials/mediaquery-tablet";
