@@ -48,30 +48,6 @@ h3 {
     font-weight: 100;
 }
 
-.titulos {
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
-    .flecha-link img {
-        width: 25px;
-        height: auto;
-        cursor: pointer;
-        display: block;
-        transform: scale(1);
-        transition: transform 0.3s ease;
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-}
-
-.descripcion {
-    padding: 0 60px 70px 60px;
-}
-
 /*  header  */
 
 header {
@@ -124,6 +100,30 @@ header {
     }
 }
 
+.titulos {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    .flecha-link img {
+        width: 25px;
+        height: auto;
+        cursor: pointer;
+        display: block;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.descripcion {
+    padding: 0 60px 70px 60px;
+}
+
 @import "./partials/index";
 @import "./partials/proyectos";
 @import "./partials/sobre-mi";
@@ -134,7 +134,7 @@ header {
 
 footer {
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-color: $fondo;
     display: flex;
     flex-direction: column;

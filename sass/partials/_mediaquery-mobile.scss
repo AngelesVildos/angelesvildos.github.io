@@ -2,23 +2,112 @@
 
 @media (max-width: 575.98px) {
 
+    #splash-screen {
+        #boton-visit {
+            width: 20%;
+        }
+    }
+
     h1 {
-        font-size: 2.6rem;
+        font-size: 7rem;
     }
     
     h2 {
-        font-size: 2.2rem;
+        font-size: 1.7rem;
     }
 
     h3 {
         font-size: 1rem;
     }
 
+    header {
+        #navbar {
+            padding-left: 20px;
+            padding-right: 20px;
+            #navbar-desplegable {
+                margin-top: 20px;
+                gap: 15px;
+            }
+        }
+    }
+
+    #portada {
+        .portada-texto {
+            h1 {
+                font-size: 4.5rem;
+                flex-direction: column;
+            }
+            p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .titulos {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+    }
+
+    #sobre-mi {
+        .titulos {
+            height: 80px;
+        }
+    }
+
     .contenedor-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "imagen1"
-            "texto1"
-            "imagen2";
+        "texto1 imagen1"
+        "texto1 imagen2";
+        margin: auto;
+        width: 90%;
+        height: 95vh;
+        padding-bottom: 100px;
+        .contenedor-img-grid1 {
+            grid-area: imagen1;
+            transform: translateY(40px);
+        }
+        .contenedor-img-grid2 {
+            grid-area: imagen2;
+            transform: translateY(-18px);
+        }
+        .texto-grid-1 {
+            grid-area: texto1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        img {
+            aspect-ratio: 3 / 4;
+            height: auto;
+            display: block;
+        }
+    }
+
+    #proyectos {
+        height: 60vh;
+        .titulos {
+            height: 200px;
+        }
+    }
+
+    .contenedor-proyectos {
+        .div-proyectos {
+            height: 40px;
+            a {
+                margin-left: 27px;
+            }
+        }
+    }
+    
+    footer {
+        height: 150px;
+        .footer-contenido {
+            padding-right: 37px;
+        }
     }
 }
