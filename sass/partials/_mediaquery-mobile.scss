@@ -17,7 +17,7 @@
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     header {
@@ -31,6 +31,15 @@
         }
     }
 
+    .titulos {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+    }
+
+    // page - index
+
     #portada {
         .portada-texto {
             h1 {
@@ -43,12 +52,7 @@
         }
     }
 
-    .titulos {
-        text-align: center;
-        padding-left: 0;
-        padding-right: 0;
-        display: block;
-    }
+    // section - sobre mí
 
     #sobre-mi {
         .titulos {
@@ -88,6 +92,8 @@
         }
     }
 
+    // section - proyectos
+
     #proyectos {
         height: 60vh;
         .titulos {
@@ -104,6 +110,79 @@
         }
     }
     
+    // page - la opera
+
+    #laopera {
+        .titulos {
+            margin-top: 100px;
+            height: 150px;
+            position: relative;
+            .flecha-link {
+                position: absolute;
+                top: 15px;
+                right: 30px;
+            }
+        }
+        .descripcion {
+            padding-bottom: 50px;
+        }
+    }
+
+    .botones-laopera {
+        padding-left: 0;
+        padding-right: 0;
+        width: 80%;
+        margin: auto;
+        gap: 50px;
+        font-size: 1.3rem;
+    }
+
+    .grid-anuncios {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .grid-reels {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+
+    // page - crecer con memoria
+
+    #crecerconmemoria {
+        .titulos {
+            margin-top: 100px;
+            height: auto;
+            position: relative;
+            h1 {
+            font-size: 6rem;
+            }
+            .flecha-link {
+                position: absolute;
+                top: 45px;
+                right: 30px;
+            }
+        }
+        .descripcion {
+            padding-top: 60px;
+        }
+        .video-ccm {
+            .titulo-video {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+
+    #modal-anuncios {
+        .video-titulo {
+            top: 250px;
+        }
+    }
+
+    // footer
+
     footer {
         height: 150px;
         .footer-contenido {
