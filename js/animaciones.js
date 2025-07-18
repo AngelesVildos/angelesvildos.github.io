@@ -151,6 +151,26 @@ document.addEventListener("DOMContentLoaded", () => {
     videoEl.src = "";
     document.body.style.overflow = "";
   }
+
+  // --- INICIO Lazy Load para videos ---
+  const lazyVideos = document.querySelectorAll('.lazy-video');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        if (!video.src) {
+          video.src = video.dataset.src;
+          video.load();
+        }
+        observer.unobserve(video);
+      }
+    });
+  });
+
+  lazyVideos.forEach(video => observer.observe(video));
+  // --- FIN Lazy Load ---
+
 });
 
 // Hace clickeables todos los .div-project
@@ -160,6 +180,58 @@ document.querySelectorAll(".div-project").forEach((div) => {
     div.style.cursor = "pointer";
     div.addEventListener("click", () => {
       window.location.href = link.href;
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth <= 576) {
+    const grids = [
+      { container: document.getElementById("anuncios"), videos: [...document.querySelectorAll("#anuncios video")] },
+      { container: document.getElementById("reels"), videos: [...document.querySelectorAll("#reels video")] },
+    ];
+
+    const btnVerMas = document.getElementById("btn-ver-mas");
+
+    // Aquí: anuncios 4, reels 8
+    const grupoCantidadPorGrid = [4, 8];
+    let indicesMostrados = [0, 0];
+
+    function mostrarVideosEnGrid(gridIndex) {
+      const { videos } = grids[gridIndex];
+      const cantidad = grupoCantidadPorGrid[gridIndex];
+      let currentIndex = indicesMostrados[gridIndex];
+
+      for (let i = currentIndex; i < currentIndex + cantidad && i < videos.length; i++) {
+        videos[i].classList.add("visible");
+      }
+
+      indicesMostrados[gridIndex] = currentIndex + cantidad;
+    }
+
+    let gridActivo = 0;
+    mostrarVideosEnGrid(gridActivo);
+    btnVerMas.style.display = "block";
+
+    btnVerMas.addEventListener("click", () => {
+      mostrarVideosEnGrid(gridActivo);
+
+      if (indicesMostrados[gridActivo] >= grids[gridActivo].videos.length) {
+        btnVerMas.style.display = "none";
+      }
+    });
+
+    const botonesOpera = document.querySelectorAll(".boton-videos");
+    botonesOpera.forEach((boton, i) => {
+      boton.addEventListener("click", () => {
+        gridActivo = i;
+        if (indicesMostrados[gridActivo] === 0) {
+          mostrarVideosEnGrid(gridActivo);
+        }
+
+        btnVerMas.style.display =
+          indicesMostrados[gridActivo] < grids[gridActivo].videos.length ? "block" : "none";
+      });
     });
   }
 });

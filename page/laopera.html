@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title> AV - La Opera </title>
-    <meta name="description" content="Sitio web dedicado a Taylor Swift con novedades, eras, logros, historia y discografía completa de una de las artistas más influyentes de la industria musical.">
-    <meta name="keywords" content="taylor swift, sitio taylor swift, novedades taylor wwift, eras taylor swift, historia taylor swift, discografía taylor swift, álbumes taylor swift, swifties">
+    <meta name="description" content="Edición audiovisual para la tienda LA OPERA: Contenido para redes sociales y anuncios para campañas comerciales.">
+    <meta name="keywords" content="edición de video, tienda la opera, contenido para redes sociales, anuncios audiovisuales, campañas comerciales">
+    <meta name="author" content="Ángeles Vildos">
     <!--AOS-->
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -20,7 +21,7 @@
       <!--navbar con Bootstrap-->
       <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
         <div class="container-fluid">
-          <a href="../index.html"> <img src="../medios/logo-blanco2.png" id="logo-header" alt="Logo AV"></a>
+          <a href="../index.html"> <img src="../medios/logo-blanco3.png" id="logo-header" alt="Logo AV"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" id="menu-hamburguesa"></span>
           </button>
@@ -63,46 +64,48 @@
         </div>
 
         <div id="anuncios" class="grid-anuncios visible">
-          <video src="../medios/video-mk.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña MICHAEL KORS"></video>
-          <video src="../medios/video-sale30-1.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
-          <video src="../medios/video-sale30-2.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
-          <video src="../medios/video-sale30-3.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
-          <video src="../medios/video-cybersale-1.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
-          <video src="../medios/video-cybersale-2.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
-          <video src="../medios/video-cybersale-3.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
-          <video src="../medios/video-cybersale-4.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
-          <video src="../medios/video-weekendsale.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña WEEKEND SALE 25% OFF"></video>
-          <video src="../medios/video-sale50-1.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
-          <video src="../medios/video-sale50-2.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
-          <video src="../medios/video-sale50-3.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
-          <video src="../medios/video-sale50-4.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
-          <video src="../medios/video-diadelamadre-1.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
-          <video src="../medios/video-diadelamadre-2.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
-          <video src="../medios/video-diadelamadre-3.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-mk.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña MICHAEL KORS"></video>
+          <video class="lazy-video" data-src="../medios/video-sale30-1.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-sale30-2.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-sale30-3.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-cybersale-1.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-cybersale-2.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-cybersale-3.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-cybersale-4.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-weekendsale.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña WEEKEND SALE 25% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-sale50-1.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-sale50-2.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-sale50-3.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-sale50-4.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-diadelamadre-1.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-diadelamadre-2.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/video-diadelamadre-3.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
         </div>
 
         <div id="reels" class="grid-reels">
-          <video src="../medios/reel-mk.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña MICHAEL KORS"></video>
-          <video src="../medios/reel-sale30-1.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
-          <video src="../medios/reel-sale30-2.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
-          <video src="../medios/reel-sale30-3.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
-          <video src="../medios/reel-cybersale-1.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
-          <video src="../medios/reel-cybersale-2.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
-          <video src="../medios/reel-cybersale-3.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
-          <video src="../medios/reel-cybersale-4.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
-          <video src="../medios/reel-weekendsale.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña WEEKEND SALE 25% OFF"></video>
-          <video src="../medios/reel-sale50-1.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
-          <video src="../medios/reel-sale50-2.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
-          <video src="../medios/reel-sale50-3.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
-          <video src="../medios/reel-sale50-4.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
-          <video src="../medios/reel-diadelamadre-1.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
-          <video src="../medios/reel-diadelamadre-2.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
-          <video src="../medios/reel-diadelamadre-3.mp4" autoplay muted loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
-          <video src="../medios/reel-1.mp4" autoplay muted loop playsinline data-title="Reel para colección FALL WINTER"></video>
-          <video src="../medios/reel-2.mp4" autoplay muted loop playsinline data-title="Reel para colección FALL WINTER"></video>
-          <video src="../medios/reel-3.mp4" autoplay muted loop playsinline data-title="Reel para colección FALL WINTER"></video>
-          <video src="../medios/reel-4.mp4" autoplay muted loop playsinline data-title="Reel para colección FALL WINTER"></video>
+          <video class="lazy-video" data-src="../medios/reel-mk.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña MICHAEL KORS"></video>
+          <video class="lazy-video" data-src="../medios/reel-sale30-1.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-sale30-2.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-sale30-3.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 30% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-cybersale-1.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-cybersale-2.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-cybersale-3.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-cybersale-4.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña CYBER SALE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-weekendsale.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña WEEKEND SALE 25% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-sale50-1.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-sale50-2.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-sale50-3.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-sale50-4.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña SALE 50% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-diadelamadre-1.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-diadelamadre-2.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-diadelamadre-3.mp4" muted autoplay loop playsinline data-title="Anuncio para campaña DÍA DE LA MADRE 20% OFF"></video>
+          <video class="lazy-video" data-src="../medios/reel-1.mp4" muted autoplay loop playsinline data-title="Reel para colección FALL WINTER"></video>
+          <video class="lazy-video" data-src="../medios/reel-2.mp4" muted autoplay loop playsinline data-title="Reel para colección FALL WINTER"></video>
+          <video class="lazy-video" data-src="../medios/reel-3.mp4" muted autoplay loop playsinline data-title="Reel para colección FALL WINTER"></video>
+          <video class="lazy-video" data-src="../medios/reel-4.mp4" muted autoplay loop playsinline data-title="Reel para colección FALL WINTER"></video>
         </div>
+
+        <button id="btn-ver-mas" style="display:none;">Ver más</button>
       </section>
     </main>
 

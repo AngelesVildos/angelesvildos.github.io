@@ -61,6 +61,26 @@
     grid-template-rows: repeat(4, 1fr);
 }
 
+#btn-ver-mas {
+    display: flex;
+    margin: auto;
+    flex: 1;
+    height: 40px;
+    width: 100px;
+    font-weight: 400;
+    background-color: $fondo;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(111, 111, 111, 0.3); 
+    border-radius: 5px;
+    &:hover {
+        border: 1px solid white;
+    }
+}
+
 // Visor de video en pantalla completa
 
 .video-modal {

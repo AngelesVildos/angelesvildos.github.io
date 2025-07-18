@@ -75,18 +75,18 @@
         padding-bottom: 100px;
         .contenedor-img-grid1 {
             grid-area: imagen1;
-            transform: translateY(40px);
+            transform: translateY(18px);
         }
         .contenedor-img-grid2 {
             grid-area: imagen2;
-            transform: translateY(-18px);
+            transform: translateY(-25px);
         }
         .texto-grid-1 {
             grid-area: texto1;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         img {
             aspect-ratio: 3 / 4;
@@ -148,6 +148,20 @@
     .grid-reels {
         grid-template-columns: repeat(2, 1fr); 
         gap: 20px;
+    }
+
+    #btn-ver-mas {
+        display: block;
+    }
+
+    .grid-reels video,
+    .grid-anuncios video {
+    display: none !important;
+    }
+
+    .grid-reels video.visible,
+    .grid-anuncios video.visible {
+    display: inline-block !important;
     }
 
     // page - crecer con memoria
