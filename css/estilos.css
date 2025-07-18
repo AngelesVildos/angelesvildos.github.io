@@ -572,8 +572,11 @@ footer .footer-texto {
   }
   #laopera .titulos .flecha-link {
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 27px;
+    right: 37px;
+  }
+  #laopera .titulos .flecha-link img {
+    width: 15px;
   }
   #laopera .descripcion {
     padding-bottom: 50px;
@@ -615,8 +618,11 @@ footer .footer-texto {
   }
   #crecerconmemoria .titulos .flecha-link {
     position: absolute;
-    top: 45px;
-    right: 30px;
+    top: 60px;
+    right: 37px;
+  }
+  #crecerconmemoria .titulos .flecha-link img {
+    width: 15px;
   }
   #crecerconmemoria .descripcion {
     padding-top: 60px;

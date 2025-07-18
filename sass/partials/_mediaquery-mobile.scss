@@ -122,8 +122,11 @@
             position: relative;
             .flecha-link {
                 position: absolute;
-                top: 15px;
-                right: 30px;
+                top: 27px;
+                right: 37px;
+                img {
+                    width: 15px;
+                }
             }
         }
         .descripcion {
@@ -176,8 +179,11 @@
             }
             .flecha-link {
                 position: absolute;
-                top: 45px;
-                right: 30px;
+                top: 60px;
+                right: 37px;
+                img {
+                    width: 15px;
+                }
             }
         }
         .descripcion {
