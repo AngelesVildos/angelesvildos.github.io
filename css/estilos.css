@@ -174,7 +174,10 @@ header #navbar #navbar-desplegable a:hover::after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.9rem;
+  font-size: 2.15rem;
+}
+#portada .portada-texto h1 {
+  font-size: 9rem;
 }
 
 /*  section - proyectos */
